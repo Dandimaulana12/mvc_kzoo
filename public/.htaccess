@@ -1,0 +1,14 @@
+Options -Multiviews
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !=f
+RewriteCond %{REQUEST_FILENAME} !=d
+RewriteRule ^img/ - [L]
+RewriteRule ^img-tim/ - [L]
+RewriteRule ^css/ - [L]
+RewriteRule ^swiper-css/ - [L]
+RewriteRule ^aos/ - [L]
+RewriteRule ^js/ - [L]
+RewriteRule ^Animals-Gallery/ - [L]
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+RewriteRule ^(.*)$ index.php?url=$1 [L]
